@@ -1,9 +1,11 @@
-
+print "Please enter a key\n"
+key = raw_input().upper()
+print "Please eter plain text\n"
 inpt = raw_input().upper()
-key = 'bits'
+
 def move (char,pos) :	
 	n = ord(char) + pos 
-	if n > 90 :
+	if n >= 90 :
 		n -= 90
 		n += 64
 	return chr(n)
